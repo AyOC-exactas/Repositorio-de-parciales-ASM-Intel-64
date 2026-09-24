@@ -1,0 +1,39 @@
+;########### SECCION DE DATOS
+section .data
+
+;########### SECCION DE TEXTO (PROGRAMA)
+section .text
+
+; Completar las definiciones (serán revisadas por ABI enforcer):
+ITEM_KIND_OFFSET EQU 0
+ITEM_WEIGHT_OFFSET EQU 0
+ITEM_SIZE EQU 0
+
+BACKPACK_ITEMS_OFFSET EQU 0
+BACKPACK_MAX_WEIGHT_OFFSET EQU 0
+BACKPACK_ITEM_COUNT_OFFSET EQU 0
+BACKPACK_SIZE EQU 0
+
+DESTINATION_NAME_OFFSET EQU 0
+DESTINATION_REQUIREMENTS_OFFSET EQU 0
+DESTINATION_REQUIREMENTS_SIZE_OFFSET EQU 0
+DESTINATION_SIZE EQU 0
+
+EVENT_NEXT_OFFSET EQU 0
+EVENT_DESTINATION_OFFSET EQU 0
+EVENT_SIZE EQU 0
+
+ITINERARY_FIRST_OFFSET EQU 0
+ITINERARY_SIZE EQU 0
+
+NULL EQU 0
+
+extern backpackContainsItem
+extern malloc
+
+; backpack_t *prepareBackpack(itinerary_t *itinerary, uint8_t getItemWeight(item_kind_t))
+global prepareBackpack 
+prepareBackpack:
+
+ret
+
